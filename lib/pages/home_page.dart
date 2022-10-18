@@ -88,17 +88,16 @@ class HomePage extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    RatingBar.builder(
-                        initialRating: movie.idb.toDouble(),
-                        itemCount: 5,
-                        itemSize: 18,
-                        itemBuilder: (context, index) {
-                          return Icon(
-                            Icons.star,
-                            color: kLogoColor,
-                          );
-                        },
-                        onRatingUpdate: (rating) {})
+                    RatingBarIndicator(
+                      rating: movie.idb.toDouble(),
+                      itemBuilder: (context, index) => const Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                      ),
+                      itemCount: 5,
+                      itemSize: 18.0,
+                      direction: Axis.horizontal,
+                    ),
                   ],
                 )
               ],
@@ -165,17 +164,16 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              RatingBar.builder(
-                                  initialRating: movie.idb.toDouble(),
-                                  itemCount: 5,
-                                  itemSize: 18,
-                                  itemBuilder: (context, index) {
-                                    return Icon(
-                                      Icons.star,
-                                      color: kLogoColor,
-                                    );
-                                  },
-                                  onRatingUpdate: (rating) {})
+                              RatingBarIndicator(
+                                rating: movie.idb.toDouble(),
+                                itemBuilder: (context, index) => const Icon(
+                                  Icons.star,
+                                  color: Colors.amber,
+                                ),
+                                itemCount: 5,
+                                itemSize: 18.0,
+                                direction: Axis.horizontal,
+                              ),
                             ],
                           ),
                         ],

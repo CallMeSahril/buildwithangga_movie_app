@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       initialRoute: HomePage.routeName,
       routes: {
         HomePage.routeName: (context) => const HomePage(),
-        SearchPage.routeName: (context) => SearchPage(),
+        SearchPage.routeName: (context) => const SearchPage(),
         DetailPage.routeName: (context) => DetailPage(
               movie: ModalRoute.of(context)?.settings.arguments as Movie,
             )
