@@ -11,6 +11,7 @@ A new Flutter project.
 -Route
 -SliverList
 -Local Data
+- flutter_rating_bar: ^4.0.1
 
 ## UI
 ![21](https://user-images.githubusercontent.com/103849124/196248748-eef52e92-48ba-4f86-aa00-82adbde3a262.jpg)
